@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bitcoin</title>
+    <!-- Link to CSS bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Link to own CSS -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.esilv.fr/formations/cycle-ingenieur/majeures/ingenierie-financiere/" target="_blank" title="Esilv, la formation par excellence">Ingénierie financière</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Accueil.html">Accueil</a></li>
+                    <li class="active"><a href="Bitcoin.html">Bitcoin</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="mailto:guillaume.balossini@devinci.fr">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of navbar -->
+    <!-- Showcase bitcoin -->
+    <div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+            <h1>Bitcoin</h1>
+            <form action="#">
+                <input type="text" class="input-hash" name="input-hash">
+                <label for="input-hash">Entrez un hash</label>
+                </br>
+                <input type="button" value="Chercher" class="submit-hash" />
+            </form>
+            <p class="error"></p>
+        </div>
+    </div>
+    <div class="container container-bitcoin-infos">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 bc-infos">
+                <div class="panel panel-yellow">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-tasks fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <span id="bitcoin_block_number" class="bitcoin-number bitcoin-infos"></span>
+                                <div>Blocks n°</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 bc-infos">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-lock fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <span id="bitcoin_network_hash" class="bitcoin-hash bitcoin-infos"></span>
+                                <div>Hash</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 bc-infos">
+                <div class="panel panel-red">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-calendar-o fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <span id="bitcoin_blocks" class="bitcoin-time bitcoin-infos"></span>
+                                <div>Date de création</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 bc-infos">
+                <div class="panel panel-green">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-money fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <span id="bitcoin_usd_price" class="bitcoin-infos"></span>
+                                <div> / bitcoin</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of showcase -->
+    <div class="page-header"></div>
+    <!-- Script bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/bitcoin.js"></script>
+</body>
+
+</html>

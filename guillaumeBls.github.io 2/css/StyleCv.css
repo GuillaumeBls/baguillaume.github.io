@@ -1,0 +1,28 @@
+@font-face{
+	font-family: 'Open sans';
+	src : url(../Police/Open_Sans/OpenSans-Regular.ttf);
+}
+body
+{
+	font-family: 'Open sans';
+}
+.Guillaume
+{
+	font-size: 35px;
+	border: 3px black outset;
+	border-radius: 7px;
+	box-shadow : 1px 2px 1px black;
+	
+}
+h1, h2, p
+{
+	text-align: center;
+}
+h2
+{
+	color: rgb(14,29,218);
+}
+
+
+
+
